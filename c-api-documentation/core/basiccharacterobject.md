@@ -1,11 +1,12 @@
 # BasicCharacterObject
 
-`BasicCharacterObjects` 包含了 `npccharacters` XML 文件中的反序列化信息。每个被定义的角色有 `BodyProperties`, `Equipment`, `Level`, `Skills`, 和 `Culture` 信息。
+BasicCharacterObjects contain the deserialized information from the `npccharacters` XML file. This includes the BodyProperties, Equipment, Level, Skills, and Culture for each defined character.
 
-`BasicCharacterObjects` 一般用来构建 [Agents](../mountandblade/agent.md) 的区块。
+BasicCharacterObjects are used as the building blocks for [Agents](../mountandblade/agent.md).
 
-你可以用 [MBObjectManager](mbobjectmanager.md) 来获取一个加载后的  `BasicCharacterObject` ，代码如下：
+You can use the [MBObjectManager](mbobjectmanager.md) to get a loaded BasicCharacterObject by using the following:
 
 ```csharp
 MBObjectManager.Instance.GetObject<BasicCharacterObject>("example_troop_id");
 ```
+
