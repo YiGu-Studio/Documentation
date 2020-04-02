@@ -1,5 +1,9 @@
 # [骑马与砍杀2 领主 Mod 制作文档](https://yigu-studio.gitbook.io/bannerlord-modding-cn/)
 
+原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)    
+作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)    
+译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)
+
 ## Mod 制作简介
 
 * [开始](_intro/getting-started.md)
