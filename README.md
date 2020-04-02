@@ -1,7 +1,7 @@
-# [骑马与砍杀2 领主 Mod 制作文档](https://yigu-studio.gitbook.io/bannerlord-modding-cn/)
+# 骑马与砍杀2 领主 Mod 制作文档
 
-原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)    
-作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)    
+原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)  
+作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)  
 译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)
 
 ## Mod 制作简介
@@ -15,21 +15,21 @@
 * [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
 * [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
 
-## [Mod C# API 文档](_csharp-api/README.md)
+## [Mod C\# API 文档](_csharp-api/README.md)
 
-* [战役系统 CampaignSystem](_csharp-api/campaignsystem)
-* [核心 Core](_csharp-api/core)
-* [引擎 Engine](_csharp-api/engine)
-* [输入系统 InputSystem](_csharp-api/inputsystem)
-* [库 Library](_csharp-api/library)
-* [本地化 Localization](_csharp-api/localization)
-* [MountAndBlade](_csharp-api/mountandblade)
-* [网络 Network](_csharp-api/network)
-* [平台服务 PlatformService](_csharp-api/platformservice)
-* [保存系统 SaveSystem](_csharp-api/savesystem)
-* [TwoDimension](_csharp-api/twodimension)
+* [战役系统 CampaignSystem](c-api-documentation/campaignsystem.md)
+* [核心 Core](c-api-documentation/core/)
+* [引擎 Engine](c-api-documentation/engine/)
+* [输入系统 InputSystem](c-api-documentation/inputsystem/)
+* [库 Library](c-api-documentation/library/)
+* [本地化 Localization](c-api-documentation/localization.md)
+* [MountAndBlade](c-api-documentation/mountandblade/)
+* [网络 Network](c-api-documentation/network.md)
+* [平台服务 PlatformService](c-api-documentation/platformservice.md)
+* [保存系统 SaveSystem](c-api-documentation/savesystem.md)
+* [TwoDimension](c-api-documentation/twodimension.md)
 
-## [Gauntlet UI系统 文档](_gauntlet/README.md)
+## [Gauntlet UI系统 文档](_gauntlet/)
 
 * [GauntletLayer](_gauntlet/gauntletlayer.md)
 * [GauntletMovie](_gauntlet/gauntletmovie.md)
