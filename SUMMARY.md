@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Bannerlord Documentation](README.md)
+* [骑马与砍杀2 领主 Mod 制作文档](README.md)
 * [Introduction](_intro/README.md)
   * [Getting Started](_intro/getting-started.md)
   * [Folder Structure](_intro/folder-structure.md)
