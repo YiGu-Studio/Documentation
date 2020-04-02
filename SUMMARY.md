@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Bannerlord Documentation](README.md)
+* [骑马与砍杀2 领主 Mod 制作文档](README.md)
 * [Introduction](_intro/README.md)
   * [Getting Started](_intro/getting-started.md)
   * [Folder Structure](_intro/folder-structure.md)
@@ -41,7 +41,7 @@
   * [GauntletMovie](_gauntlet/gauntletmovie.md)
   * [GauntletView](_gauntlet/gauntletview.md)
   * [ScreenBase](_gauntlet/screenbase.md)
-  * [SceneLayer](_gauntlet/screenlayer/scenelayer.md)
+  * [SceneLayer](_gauntlet/scenelayer.md)
   * [ScreenManager](_gauntlet/screenmanager.md)
   * [ViewModel](_gauntlet/viewmodel.md)
   * [Widget](_gauntlet/widget.md)
