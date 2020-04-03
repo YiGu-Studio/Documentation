@@ -19,7 +19,7 @@ The following guide will walk you through step-by-step on how to create a mod th
 >>>>>>> translated modding-gauntlet-without-csharp.md
 
 
-接下来的指南将在不使用任何C#的情况下，一步一步地教你创建可以重写任何Gauntlet UI的Mod。在这个例子中，我们将使用一些格式化的文本重写任务UI。
+接下来的指南将在不使用任何C#的情况下，一步一步地教你创建可以重写任何Gauntlet UI的Mod。在这个例子中，我们将使用一些自定义的文本重写任务UI。
 
 ## 准备
 
