@@ -35,6 +35,6 @@
 
 ## 下一步
 
-* 参考[文件结构](folder-structure.md) 页面，以获取其它文件夹路径的参考信息，帮助拓展你的Mod。
+* 参考[文件夹结构](folder-structure.md) 页面，以获取其它文件夹路径的参考信息，帮助拓展你的Mod。
 * 参考[基础 C\# Mod](../_tutorials/basic-csharp-mod.md) 页面，它提供了一份在霸主中设置，编译，运行代码的简单例子。
 * 参考[不使用C#的Gauntlet UI定制](_tutorials/modding-gauntlet-without-csharp.md) 页面，它提供了无需C#的Gauntlet UI定制方法。
