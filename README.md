@@ -1,31 +1,31 @@
-# Bannerlord Documentation
+# [骑马与砍杀2 领主 Mod 制作文档](https://yigu-studio.gitbook.io/bannerlord-modding-cn/)
 
-## Introduction to Modding
+## Mod 制作简介
 
-* [Getting Started](_intro/getting-started.md)
-* [Folder Structure](_intro/folder-structure.md)
-* [Advanced](_intro/advanced.md)
+* [开始](_intro/getting-started.md)
+* [文件结构](_intro/folder-structure.md)
+* [高级用法](_intro/advanced.md)
 
-## Tutorials
+## 教程
 
-* [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
-* [Modding Gauntlet UIs Without C\#](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
+* [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
+* [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
 
-## [C\# API Documentation](_csharp-api/)
+## [Mod C# API 文档](_csharp-api/README.md)
 
-* [CampaignSystem](_csharp-api/campaignsystem.md)
-* [Core](_csharp-api/core/)
-* [Engine](_csharp-api/engine/)
-* [InputSystem](_csharp-api/inputsystem/)
-* [Library](_csharp-api/library/)
-* [Localization](_csharp-api/localization.md)
-* [MountAndBlade](_csharp-api/mountandblade/)
-* [Network](_csharp-api/network.md)
-* [PlatformService](_csharp-api/platformservice.md)
-* [SaveSystem](_csharp-api/savesystem.md)
-* [TwoDimension](_csharp-api/twodimension.md)
+* [战役系统 CampaignSystem](_csharp-api/campaignsystem)
+* [核心 Core](_csharp-api/core)
+* [引擎 Engine](_csharp-api/engine)
+* [输入系统 InputSystem](_csharp-api/inputsystem)
+* [库 Library](_csharp-api/library)
+* [本地化 Localization](_csharp-api/localization)
+* [MountAndBlade](_csharp-api/mountandblade)
+* [网络 Network](_csharp-api/network)
+* [平台服务 PlatformService](_csharp-api/platformservice)
+* [保存系统 SaveSystem](_csharp-api/savesystem)
+* [TwoDimension](_csharp-api/twodimension)
 
-## [Gauntlet Documentation](_gauntlet/)
+## [Gauntlet UI系统 文档](_gauntlet/README.md)
 
 * [GauntletLayer](_gauntlet/gauntletlayer.md)
 * [GauntletMovie](_gauntlet/gauntletmovie.md)
@@ -37,10 +37,9 @@
 * [Movies](_gauntlet/movie.md) \(.xml\)
 * [Brushes](_gauntlet/brush.md) \(.xml\)
 
-## [XML Documentation](_xmldocs/)
+## [XML 文档](_xmldocs)
 
-* [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
-* [Items \(XML\)](https://github.com/Bannerlord-Modding/Documentation/tree/8e7de4e7aba5bbbc7f8fb951a66936248b8be454/_xmldocs/Items/README.md) \(.xml\)
-* [Scene](_xmldocs/scene.md) \(.xscene\)
-* [SubModule](_xmldocs/submodule.md) \(.xml\)
-
+* [气候 Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
+* [物品 Items \(XML\)](_xmldocs/Items/README.md) (.xml)
+* [场景 Scene](_xmldocs/scene.md) \(.xscene\)
+* [子模块 SubModule](_xmldocs/submodule.md) \(.xml\)
