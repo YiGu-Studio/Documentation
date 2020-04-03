@@ -64,45 +64,6 @@
     </Module>
    ```
 
-
-### Setting up your Module \(SubModule.xml\)
-
-1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #6).
-3. Create a new folder named `bin` \(don't navigate to it\).
-4. Set the build output for your DLL \(in Visual Studio\) to the previously created `bin` folder.
-5. Create a new class in your VS Project and name it `MySubModule` \(_can be anything_\).
-6. Create a new `SubModule.xml` file and then paste the following into it:
-
-   ```markup
-    <Module>
-        <Name value="Example Mod"/>
-        <Id value="ExampleMod"/>
-        <Version value="v1.0.0"/>
-        <SingleplayerModule value="true"/>
-        <MultiplayerModule value="false"/>
-        <DependedModules>
-            <DependedModule Id="Native"/>
-            <DependedModule Id="SandBoxCore"/>
-            <DependedModule Id="Sandbox"/>
-            <DependedModule Id="CustomBattle"/>
-            <DependedModule Id="StoryMode" />
-        </DependedModules>
-        <SubModules>
-            <SubModule>
-                <Name value="ExampleMod"/>
-                <DLLName value="ExampleMod.dll"/>
-                <SubModuleClassType value="ExampleMod.MySubModule"/>
-                <Tags>
-                    <Tag key="DedicatedServerType" value="none" />
-                    <Tag key="IsNoRenderModeElement" value="false" />
-                </Tags>
-            </SubModule>
-        </SubModules>
-        <Xmls/>
-    </Module>
-   ```
-   
 7. 如果你用了不同的名字，记得修改对应的值
 8. 开始启动，确保你的 Mod 出现 `Singleplayer` &gt; `Mods`。
 
