@@ -8,7 +8,7 @@
 
 ## 文件夹描述 & 文件样例
 
-* `AssetPackages` - 暂时还不知道作用，可能需要等到官方编辑器才能创建/修改这些文件。
+* `AssetPackages` - 暂时还不知道作用，可能需要等到官方编辑器放出才能创建/修改这些文件。
   * `someasset.tpac`
   
 * `Atmospheres` -  [参见\[Atmosphere\]](../_xmldocs/atmosphere.md)
