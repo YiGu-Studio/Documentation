@@ -18,7 +18,6 @@ The following guide will walk you through step-by-step on how to create a mod th
 ## 说明
 >>>>>>> translated modding-gauntlet-without-csharp.md
 
-
 接下来的指南将在不使用任何C#的情况下，一步一步地教你创建可以重写任何Gauntlet UI的Mod。在这个例子中，我们将使用一些自定义的文本重写任务UI。
 
 ## 准备
@@ -34,7 +33,7 @@ The following guide will walk you through step-by-step on how to create a mod th
 
 4. 在GUI文件夹中，创建文件夹并命名为`Prefabs`。我们等会儿会用到它。
 
-5.回到步骤#2中你所创建的模组文件夹（即ExampleUIMod，译者注），并且创建文件`SubModule.xml`，然后把如下代码粘贴到文件里：
+5. 回到步骤#2中你所创建的模组文件夹（即ExampleUIMod，译者注），并且创建文件`SubModule.xml`，然后把如下代码粘贴到文件里：
 
    ```markup
     <Module>
@@ -49,7 +48,7 @@ The following guide will walk you through step-by-step on how to create a mod th
     </Module>
    ```
 
-6.运行启动器，保证你的Mod能够在`Singleplayer` &gt; `Mods`下出现。
+6. 运行启动器，保证你的Mod能够在`Singleplayer` &gt; `Mods`下出现。
 
 要获取更多模组文件结构的信息, [点击这里](../_intro/folder-structure.md)
 
