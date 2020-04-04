@@ -11,7 +11,7 @@
 创建 C\# 项目之前，要明白的是，如果只是修改/增加物品，人物或场景的话，可以不需要创建项目。
 
 1. 启动 Microsoft Visual Studio 并且选择 `创建新项目`。
-2. 选择 `经典库 (.NET Framework)`。
+2. 选择 `类库 (.NET Framework)`。
 3. 给项目起名字并且选择框架 `.NET Framework 4.7.2`。如果不能选这个选项，可以从[这里](https://dotnet.microsoft.com/download/dotnet-framework/net472)下载。下载\(开发者包\)
 4. 现在你的项目已经创建好，设置你的[构建路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)到你的游戏目录下的`Modules/MyModule/bin/Win64_Shipping_Client`。
 5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 所有`bin\Win64_Shipping_Client`目录下的 `TaleWorlds.*` DLLs 文件到你的游戏文件夹（不是Mod目录）。并且引用 `TaleWorlds.*` DLLs 到每一个官方模组的 `Modules\ModuleName\bin\Win64_Shipping_Client` 里。
