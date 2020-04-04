@@ -49,7 +49,7 @@
 
 3. 在文本编辑器中打开粘贴的文件。
 4. 搜索定位 (Ctrl+F) `Text="@QuestTitleText"`。
-5. 替换 `@QuestTitleText` (包括 @ symbol) 为你想要的标题。
+5. 替换 `@QuestTitleText` (包括 @ 符号) 为你想要的标题。
 6. 保存文件。
 7. 打开霸主启动器并且切换至 `Singleplayer` &gt; `Mods` 界面，确保你的Mod打了勾，然后启动游戏，随便选个存档开始游戏。
 
