@@ -1,22 +1,10 @@
-<<<<<<< HEAD
-# Modding Gauntlet UIs Without C\#
-
-## Important
-
-### You Can **NOT** Use Depended Modules For This Tutorial. It Shouldn't Cause Any Issues Though.
-=======
 # 不需要C#的UI系统Mod入门 #
 
 ## 重要提示
 ### 本教程中，你 **不能** 使用任何依赖性的模组。尽管这方面应该不会有什么问题。
->>>>>>> translated modding-gauntlet-without-csharp.md
 
 
-<<<<<<< HEAD
-The following guide will walk you through step-by-step on how to create a mod that can overwrite any Gauntlet UI without using any C\#. For this example, we will be overriding the Quests UI with some custom title text.
-=======
 ## 说明
->>>>>>> translated modding-gauntlet-without-csharp.md
 
 接下来的指南将在不使用任何C#的情况下，一步一步地教你创建可以重写任何Gauntlet UI的Mod。在这个例子中，我们将使用一些自定义的文本重写任务UI。
 
