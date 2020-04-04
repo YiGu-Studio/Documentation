@@ -43,7 +43,7 @@
 
 ## [XML 文档](_xmldocs/)
 
-* [气候 Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
+* [环境 Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
 * [物品 Items \(XML\)](_xmldocs/Items/README.md) \(.xml\)
 * [场景 Scene](_xmldocs/scene.md) \(.xscene\)
 * [文化 Culture](_xmldocs/cultures.md) \(.xml\)
