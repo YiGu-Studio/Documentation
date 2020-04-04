@@ -19,8 +19,8 @@
 ### Debugging 项目
 
 1. 打开 项目属性 到 `Debug` 选项卡。
-2. 选择 `启动外部程序` 选项，同时浏览到你游戏目录下（不是Mod目录）的`bin\Win64_Shipping_Client`文件夹里面的 `Bannerlord.exe`。
-3. 设置工作目录到游戏目录（不是Mod目录）下的 `bin\Win64_Shipping_Client`。
+2. 选择 `启动外部程序` 选项，同时浏览到你游戏目录下（不是Modules目录）的`bin\Win64_Shipping_Client`文件夹里面的 `Bannerlord.exe`。
+3. 设置工作目录到游戏目录（不是Modules目录）下的 `bin\Win64_Shipping_Client`。
 4. 添加如下的命令行参数(要确定替代 `MyModule` 的名字) 
    * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*MyModule*_MODULES_`
 
@@ -92,6 +92,6 @@
    ```
 
 6. 编译你的项目并且确认输出到 `Modules\ExampleMod\bin\Win64_Shipping_Client` 下
-7. 打开 骑砍Bannerlord 启动器并且选择 `Singleplayer` &gt; `Mods` 然后选择你的 Mod， 然后启动游戏。
+7. 打开霸主启动器，并且选择 `Singleplayer` &gt; `Mods` 然后选择你的 Mod， 然后启动游戏。
 8. 在标题页面，你应该能看到一个按钮叫做 `消息` ，点击你应该能看到 `Hello World` 出现在屏幕左下角。
-9. 现在你已经成功创建了第一个骑砍2领主的Mod！
+9. 现在你已经成功创建了第一个骑马与砍杀2：霸主的Mod！
