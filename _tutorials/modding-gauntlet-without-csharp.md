@@ -1,8 +1,8 @@
 # 不需要C#的UI系统Mod入门 #
 
 ## 重要提示
-### 本教程中，你 **不能** 使用任何依赖性的模组。尽管这方面应该不会有什么问题。
-
+### 本教程中，你 **不能** 使用任何依赖性的模组 *（译者注：即其它模组运行需要的前置模组，如Native）*
+### 尽管这方面应该不会有什么问题。
 
 ## 说明
 
@@ -21,9 +21,9 @@
 
 4. 在GUI文件夹中，创建文件夹并命名为`Prefabs`。我们等会儿会用到它。
 
-5. 回到步骤#2中你所创建的模组文件夹（即ExampleUIMod，译者注），并且创建文件`SubModule.xml`，然后把如下代码粘贴到文件里：
+5. 回到步骤#2中你所创建的模组文件夹 *（即ExampleUIMod，译者注）*，并且创建文件`SubModule.xml`，然后把如下代码粘贴到文件里：
 
-   ```markup
+    ```xml
     <Module>
         <Name value="Example UI Mod"/>
         <Id value="ExampleUIMod"/>
@@ -34,7 +34,7 @@
         <SubModules/>
         <Xmls/>
     </Module>
-   ```
+    ```
 
 6. 运行启动器，保证你的Mod能够在`Singleplayer` &gt; `Mods`下出现。
 
@@ -50,7 +50,7 @@
 
 3. 在文本编辑器中打开粘贴的文件。
 4. 搜索定位 (Ctrl+F) `Text="@QuestTitleText"`。
-5. 替换 `@QuestTitleText` (包括 @ symbol) 为你想要的标题。
+5. 替换 `@QuestTitleText` (包括 @ 符号) 为你想要的标题。
 6. 保存文件。
 7. 打开霸主启动器并且切换至 `Singleplayer` &gt; `Mods` 界面，确保你的Mod打了勾，然后启动游戏，随便选个存档开始游戏。
 

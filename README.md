@@ -2,7 +2,7 @@
 
 原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)  
 作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)  
-译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)
+译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， 世俗骑士
 
 ## Mod 制作简介
 
@@ -43,7 +43,8 @@
 
 ## [XML 文档](_xmldocs/)
 
-* [气候 Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
+* [环境 Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
 * [物品 Items \(XML\)](https://github.com/YiGu-Studio/Documentation/tree/4caa608027cfaca5aac800c2527b13e1a88cea69/_xmldocs/Items/README.md) \(.xml\)
 * [场景 Scene](_xmldocs/scene.md) \(.xscene\)
+* [文化 Culture](_xmldocs/cultures.md) \(.xml\)
 * [子模块 SubModule](_xmldocs/submodule.md) \(.xml\)

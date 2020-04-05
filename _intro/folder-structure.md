@@ -30,15 +30,15 @@
 
 ```text
 - MyModule
-    - AssetPackages
-        -- assetpackage.tpac
-    - Atmospheres
-        - Interpolated
-            -- interpolatedatmosphere.xml
-        -- atmosphere.xml
-    - bin
-        - Win64_Shipping_Client
-            -- MyModule.dll
+	- AssetPackages
+		-- assetpackage.tpac
+	- Atmospheres
+		- Interpolated
+			-- interpolatedatmosphere.xml
+		-- atmosphere.xml
+	- bin
+		- Win64_Shipping_Client
+			-- MyModule.dll
     - GUI
         - Brushes
         - Prefabs

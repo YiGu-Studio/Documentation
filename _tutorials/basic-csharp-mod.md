@@ -11,16 +11,16 @@
 创建 C\# 项目之前，要明白的是，如果只是修改/增加物品，人物或场景的话，可以不需要创建项目。
 
 1. 启动 Microsoft Visual Studio 并且选择 `创建新项目`。
-2. 选择 `经典库 (.NET Framework)`。
+2. 选择 `类库 (.NET Framework)`。
 3. 给项目起名字并且选择框架 `.NET Framework 4.7.2`。如果不能选这个选项，可以从[这里](https://dotnet.microsoft.com/download/dotnet-framework/net472)下载。下载\(开发者包\)
 4. 现在你的项目已经创建好，设置你的[构建路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)到你的游戏目录下的`Modules/MyModule/bin/Win64_Shipping_Client`。
-5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 所有`bin\Win64_Shipping_Client`目录下的 `TaleWorlds.*` DLLs 文件到你的游戏文件夹（不是Mod目录）。并且引用 `TaleWorlds.*` DLLs 到每一个官方模组的 `Modules\ModuleName\bin\Win64_Shipping_Client` 里。
+5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 游戏目录（不是指Modules目录）`bin\Win64_Shipping_Client`下的所有`TaleWorlds.*` DLLs 文件。并且引用每个官方模组的 `TaleWorlds.*` DLLs文件，目录为 `Modules\ModuleName\bin\Win64_Shipping_Client`。
 
 ### Debugging 项目
 
 1. 打开 项目属性 到 `Debug` 选项卡。
-2. 选择 `启动外部程序` 选项，同时浏览到你游戏目录下（不是Mod目录）的`bin\Win64_Shipping_Client`文件夹里面的 `Bannerlord.exe`。
-3. 设置工作目录到游戏目录（不是Mod目录）下的 `bin\Win64_Shipping_Client`。
+2. 选择 `启动外部程序` 选项，同时浏览到你游戏目录下（不是Modules目录）的`bin\Win64_Shipping_Client`文件夹里面的 `Bannerlord.exe`。
+3. 设置工作目录到游戏目录（不是Modules目录）下的 `bin\Win64_Shipping_Client`。
 4. 添加如下的命令行参数(要确定替代 `MyModule` 的名字) 
    * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*MyModule*_MODULES_`
 
@@ -63,7 +63,7 @@
         <Xmls/>
     </Module>
    ```
-
+   
 7. 如果你用了不同的名字，记得修改对应的值
 8. 开始启动，确保你的 Mod 出现 `Singleplayer` &gt; `Mods`。
 
@@ -79,9 +79,9 @@
     using TaleWorlds.Localization;
     using TaleWorlds.MountAndBlade;
    ```
-3. 继承类 `MBSubModuleBase` 类
-4. 重载 `OnSubModuleLoad()` 函数
-5. 添加如下代码到这个函数：
+3. 继承 `MBSubModuleBase` 类
+4. 重载 `OnSubModuleLoad()` 方法
+5. 添加如下代码到这个方法：
 
    ```csharp
     Module.CurrentModule.AddInitialStateOption(new InitialStateOption("Message",
@@ -92,6 +92,6 @@
    ```
 
 6. 编译你的项目并且确认输出到 `Modules\ExampleMod\bin\Win64_Shipping_Client` 下
-7. 打开 骑砍Bannerlord 启动器并且选择 `Singleplayer` &gt; `Mods` 然后选择你的 Mod， 然后启动游戏。
+7. 打开霸主启动器，并且选择 `Singleplayer` &gt; `Mods` 然后选择你的 Mod， 然后启动游戏。
 8. 在标题页面，你应该能看到一个按钮叫做 `消息` ，点击你应该能看到 `Hello World` 出现在屏幕左下角。
-9. 现在你已经成功创建了第一个骑砍2领主的Mod！
+9. 现在你已经成功创建了第一个骑马与砍杀2：霸主的Mod！
