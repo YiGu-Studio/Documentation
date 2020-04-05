@@ -12,7 +12,7 @@ GameEntities 本身包含有网格、骨骼、物理模块、以及挂载的脚�
 GameEntity.Instantiate(Scene scene, string prefabName, MatrixFrame frame)
 ```
 
-示例用法 \(在[Agent]的main中生成 (../mountandblade/agent.md)\) ：
+示例用法 \(在[Agent](../mountandblade/agent.md)\) 的main中生成  ：
 
 ```csharp
 GameEntity.Instantiate(Mission.Current.Scene, "ship_a", Agent.Main.Frame)
