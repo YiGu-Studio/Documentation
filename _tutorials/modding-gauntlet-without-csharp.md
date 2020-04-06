@@ -16,13 +16,9 @@
 
 1. 到游戏目录下，找到 `Modules` 文件夹。
 2. 创建新文件夹，命名为 `ExampleUIMod` (必须和你在步骤#5中使用同样的 Id)
-
 3. 创建新文件夹，命名为 `GUI` 并打开。
-
 4. 在GUI文件夹中，创建文件夹并命名为`Prefabs`。我们等会儿会用到它。
-
 5. 回到步骤#2中你所创建的模组文件夹 *（即ExampleUIMod，译者注）*，并且创建文件`SubModule.xml`，然后把如下代码粘贴到文件里：
-
     ```xml
     <Module>
         <Name value="Example UI Mod"/>
@@ -35,7 +31,6 @@
         <Xmls/>
     </Module>
     ```
-
 6. 运行启动器，保证你的Mod能够在`Singleplayer` &gt; `Mods`下出现。
 
 要获取更多模组文件结构的信息, [点击这里](../_intro/folder-structure.md)
@@ -45,15 +40,12 @@
 注意: 你可以重写任何 Gauntlet UI. 然而，在本教程中, 我们只重写任务UI。
 
 1. 到目录`Modules\SandBox\GUI\Prefabs\QuestsScreen` 并且复制 `QuestsScreen.xml` 文件到剪贴板。
-
 2. 到“设置好你的模组”步骤#4中，你所创建的`Prefabs`文件夹下，粘贴`QuestsScreen.xml` 文件。
-
 3. 在文本编辑器中打开粘贴的文件。
 4. 搜索定位 (Ctrl+F) `Text="@QuestTitleText"`。
 5. 替换 `@QuestTitleText` (包括 @ 符号) 为你想要的标题。
 6. 保存文件。
 7. 打开霸主启动器并且切换至 `Singleplayer` &gt; `Mods` 界面，确保你的Mod打了勾，然后启动游戏，随便选个存档开始游戏。
-
 8. 打开任务UI，你应该能够在屏幕的中上方看到你添加的的文本。
 9. 你已经成功创建了你第一个霸主Gauntlet Mod！
 

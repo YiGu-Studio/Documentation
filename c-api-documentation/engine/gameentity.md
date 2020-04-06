@@ -1,22 +1,24 @@
 # GameEntity
 
-GameEntities are objects \(entities\) in the game. Examples include characters, buildings, trees, and horses to name a few. Every prop in the game is a GameEntity.
+GameEntities指的是游戏中的实体，比如说角色、建筑、树、马等等。游戏中的所有道具都属于实体。
 
-GameEntities contain Meshes, Skeletons, PhysicsBodies, and ScriptComponents along with a variety of other things for each object in the game.
 
-You can add a GameEntity to a scene by editing the [Scene](../../_xmldocs/scene.md)'s `scene.xscene` file or spawn \(instantiate\) one directly using the following static method from the GameEntity class:
+GameEntities 本身包含有网格、骨骼、物理模块、以及挂载的脚本等等其它事物。
+
+
+你可以通过编辑[Scene](../../_xmldocs/scene.md)的 `scene.xscene` 文件，或者使用GameEntity类中的静态方法直接生成 \(创造\)  来向场景中添加 GameEntity。
 
 ```csharp
 GameEntity.Instantiate(Scene scene, string prefabName, MatrixFrame frame)
 ```
 
-Example Usage \(spawning at main [Agent](../mountandblade/agent.md)\):
+示例用法 \(在[Agent](../mountandblade/agent.md)\) 的main中生成  ：
 
 ```csharp
 GameEntity.Instantiate(Mission.Current.Scene, "ship_a", Agent.Main.Frame)
 ```
 
-## Multiplayer GameEntities
+## 联机游戏的GameEntities
 
-Some GameEntities will not be synced between Clients, unless a SynchedMissionObject ScriptComponent is added.
+有的GameEntities并不会在客户端之间同步，除非它添加了SynchedMissionObject ScriptComponent。
 
