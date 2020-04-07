@@ -1,23 +1,23 @@
 # SubModule \(XML\)
 
-## Element Descriptions
+## 字段介绍
 
-* `Name` - The name of your Module.
-* `Id` - The id of your Module \(do not use spaces\).
-* `Version` - The current version of your Module.
-* `SinglePlayerModule` - Whether or not your module is meant for Single Player mode.
-* `MultiPlayerModule` - Whether or not your module is meant for Mutli Player mode.
-* `DependedModules` - Modules that your module requires in order to function properly.
-* `SubModules` - The SubModules \(DLLs\) that your modules consists of.
-* `Xmls` - Contains Paths to XML files in the ModuleData Folder\(s\).
+* `Name` - 模组的名字
+* `Id` - 模组的ID\(不允许空格\)
+* `Version` - 模组版本
+* `SinglePlayerModule` - 是否单机模组
+* `MultiPlayerModule` - 是否联机模组
+* `DependedModules` - 依赖的模组
+* `SubModules` - 模组包含的子模块\(DLLs\)
+* `Xmls` - ModuleData文件夹中的XML文件路径.
 
-## Important
+## 重点
 
-XMLs with the same id from two separate mods \(or the same mod\) will have their assets combined and **NOT** overwritten. However, if two objects within an XML have the same id \(e.g. two items\), they will Overwrite each other in ModLoading Order as seen in the Launcher. Knowing this can be useful for overwritting native assets.
+不同模组中的同ID的XML文件中的内容会被组合而**不会覆盖**，这些文件中相同ID的东西会根据读取顺序覆盖之前加载的内容。
 
-`MPClassDivisions` Is currently broken.
+`MPClassDivisions` 目前不可用
 
-## Example
+## 例子
 
 ```xml
 <Module>
@@ -34,10 +34,10 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
         <DependedModule Id="StoryMode" />
     </DependedModules>
     <SubModules>
-        <!-- The following SubModule element is optional. You can remove this portion if your mod does not have a DLL associated with it. -->
+        <!-- 子节点是可选的，如果没有DLL的话就不需要这部分。 -->
         <SubModule>
             <Name value="MySubModule"/>
-            <!-- Path to the DLL File, if your Mod is called MyModule then it should be   -->
+            <!-- DLL文件路径  -->
             <DLLName value="ExampleMod.dll"/>
             <SubModuleClassType value="ExampleMod.MySubModule"/>
             <Tags>
