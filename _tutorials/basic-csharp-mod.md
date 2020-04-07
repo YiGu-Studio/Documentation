@@ -13,7 +13,7 @@
 1. 进入游戏根目录下的`Modules`目录。
 2. 创建一个叫`ExampleMod`的新目录 (必须与第四步中的ID一致).
 3. 创建一个叫`bin`的新目录，并在其中再创建一个叫`Win64_Shipping_Client`的目录(Modules\ExampleMod\bin\Win64_Shipping_Client)。
-4. 创建`SubModule.xml`文件(Modules\ExampleMod\SubModule.xml)并将一下内容贴到文件中。
+4. 创建`SubModule.xml`文件(Modules\ExampleMod\SubModule.xml)并将以下内容贴到文件中。
 
    ```xml
     <Module>
@@ -64,8 +64,8 @@
 ### 为你的项目DEBUG (可选)
 
 1. 打开project properties，选择 `Debug` 标签.
-2. 选择`启动外部程序 Start external program`选项并选中位于`bin\Win64_Shipping_Client`目录下的`Bannerlord.exe`。
-3. 把工作目录设置为`bin\Win64_Shipping_Client`。
+2. 选择`启动外部程序 Start external program`选项并选中位于`bin\Win64_Shipping_Client`目录下的`Bannerlord.exe`\(游戏目录而非MOD目录\)。
+3. 把工作目录设置为`bin\Win64_Shipping_Client`\(同上\)。
 4. 添加如下运行参数\(把ExampleMod替换为你MOD的名字\):
    * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*ExampleMod*_MODULES_`
 
