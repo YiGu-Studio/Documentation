@@ -10,17 +10,17 @@
 [id](#id-1) |  [Type](#Type) | [scale_factor](#scale_factor)
 
 - #### id
-  **type:** `string`  
-  **example:**  `sturgia_axe_3_t3`  
+  **类型:** `string`  
+  **例子:**  `sturgia_axe_3_t3`  
   *The ID of the item*  
   
 - #### Type  
-  **type:** `string`  
+  **类型:** `string`  
   **accepted_values:** `'Blade', 'Handle', 'Guard', 'Pommel'`  
-  **example:** `Blade`  
+  **例子:** `Blade`  
   *The Type of the piece*  
   
 - #### scale_factor
-  **type:** `int`  
-  **example:** `103`  
+  **类型:** `int`  
+  **例子:** `103`  
   *The scale of the piece*  
