@@ -43,10 +43,11 @@
 * [Movies](_gauntlet/movie.md) \(.xml\)
 * [Brushes](_gauntlet/brush.md) \(.xml\)
 
-## [XML 文档](_xmldocs/)
+## [XML Documentation](_xmldocs)
 
-* [环境 Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
-* [物品 Items \(XML\)](_xmldocs/Items/README.md) \(.xml\)
-* [场景 Scene](_xmldocs/scene.md) \(.xscene\)
-* [文化 Culture](_xmldocs/cultures.md) \(.xml\)
-* [子模块 SubModule](_xmldocs/submodule.md) \(.xml\)
+* [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
+* [Cultures](_xmldocs/cultures.md) \(.xml\)
+* [Items](_xmldocs/items.md) \(.xml\)
+* [NPCCharacters](_xmldocs/npccharacters.md) \(.xml\)
+* [Scene](_xmldocs/scene.md) \(.xml\)
+* [SubModule](_xmldocs/submodule.md) \(.xml\)
