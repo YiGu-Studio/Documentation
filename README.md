@@ -2,7 +2,7 @@
 
 原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)  
 作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)  
-译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， 世俗骑士
+译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， [世俗骑士](mailto:843750340@qq.com)
 
 ## Mod 制作简介
 
@@ -15,11 +15,8 @@
 * [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
 * [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
 
-<<<<<<< HEAD
+
 ## [Mod C\# API 文档](_csharp-api/README.md)
-=======
-## [Mod C\# API 文档](https://github.com/YiGu-Studio/Documentation/tree/4caa608027cfaca5aac800c2527b13e1a88cea69/_csharp-api/README.md)
->>>>>>> 06f095b3dc41167d8e54d0fc657e5a905e5aadd3
 
 * [战役系统 CampaignSystem](c-api-documentation/campaignsystem.md)
 * [核心 Core](c-api-documentation/core/)
