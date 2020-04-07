@@ -1,19 +1,39 @@
-# Basic C\# Mod
+# 基本 C\# Mod
 
-## 简介
+## 介绍
 
-本教程会手把手教你如何制作一个基础的用到C#的MOD。这个MOD会在单机模式的标题画面增加一个叫`Message`的按钮。当你按下它，会在聊天框输出`Hello World`。
+本文档旨在一步一步教你如何创建一个简单的 C\# Mod。这个Mod将会在单人模式的标题页面增加一个叫做 `消息` 的按钮。当点击按钮的时候，将会在聊天界面输出 `Hello World`。
 
-## 准备工作
+## 准备
 
-#### 本教程中的模组名为`ExampleMod`.
+### 创建 C\# 项目
 
-### 配置你的模组\(SubModule.xml\)
+创建 C\# 项目之前，要明白的是，如果只是修改/增加物品，人物或场景的话，可以不需要创建项目。
 
-1. 进入游戏根目录下的`Modules`目录。
-2. 创建一个叫`ExampleMod`的新目录 (必须与第四步中的ID一致).
-3. 创建一个叫`bin`的新目录，并在其中再创建一个叫`Win64_Shipping_Client`的目录(Modules\ExampleMod\bin\Win64_Shipping_Client)。
-4. 创建`SubModule.xml`文件(Modules\ExampleMod\SubModule.xml)并将以下内容贴到文件中。
+1. 启动 Microsoft Visual Studio 并且选择 `创建新项目`。
+2. 选择 `类库 (.NET Framework)`。
+3. 给项目起名字并且选择框架 `.NET Framework 4.7.2`。如果不能选这个选项，可以从[这里](https://dotnet.microsoft.com/download/dotnet-framework/net472)下载。下载\(开发者包\)
+4. 现在你的项目已经创建好，设置你的[构建路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)到你的游戏目录下的`Modules/MyModule/bin/Win64_Shipping_Client`。
+5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 游戏目录（不是指Modules目录）`bin\Win64_Shipping_Client`下的所有`TaleWorlds.*` DLLs 文件。并且引用每个官方模组的 `TaleWorlds.*` DLLs文件，目录为 `Modules\ModuleName\bin\Win64_Shipping_Client`。
+
+### Debugging 项目
+
+1. 打开 项目属性 到 `Debug` 选项卡。
+2. 选择 `启动外部程序` 选项，同时浏览到你游戏目录下（不是Modules目录）的`bin\Win64_Shipping_Client`文件夹里面的 `Bannerlord.exe`。
+3. 设置工作目录到游戏目录（不是Modules目录）下的 `bin\Win64_Shipping_Client`。
+4. 添加如下的命令行参数(要确定替代 `MyModule` 的名字) 
+   * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*MyModule*_MODULES_`
+
+#### 在本教程中，我们的项目名字叫做 `ExampleMod`。
+
+### 配置你的Module \(SubModule.xml\)
+
+1. 进入游戏目录下的`Modules`文件夹。
+2. 创建一个新的文件夹并且起名字，进入文件夹。
+3. 创建文件夹名字为 `bin`。
+4. 在 Visual Studio 中设置 构建输出的DLL到这个 `bin` 文件夹下面。
+5. 在 VS Project 下创建一个新的类 `MySubModule`。
+6. 创建文件 `SubModule.xml` 然后复制如下内容到文件中：
 
    ```xml
     <Module>
@@ -43,36 +63,16 @@
         <Xmls/>
     </Module>
    ```
+   
+7. 如果你用了不同的名字，记得修改对应的值
+8. 开始启动，确保你的 Mod 出现 `Singleplayer` &gt; `Mods`。
 
-    **注意**: `MySubModule`将是[码代码 Programming](#programming)部分中我们要用到的类名。
-
-5. 如果你用的是不同的名字，把上面的相关值改掉，以匹配Module/SubModule文件夹。
-6. 打开启动器，此时你的MOD应该显示在`Singleplayer` &gt; `Mods`类中.
-
-[点击](../_intro/folder-structure.md)了解Module目录结构
-
-### 配置项目
-
-首先，对于基础MOD来说\(比如修改或添加物品、场景等\)， **这一步不是必须的**。
-
-1. 打开 Microsoft Visual Studio 并创建一个新项目。
-2. 选择`.NET Framework`类库。
-3. 给项目取名叫`ExampleMod` (如果你取别的名字，注意命名空间和 assembly name(不知道是啥) 别错了)，框架选`.NET Framework 4.7.2`。如果不能选这个框架, [点击下载](https://dotnet.microsoft.com/download/dotnet-framework/net472)\(开发者包\).
-4. 现在你的项目配置好了, [设置你的构建路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)为`Modules/ExampleMod/bin/Win64_Shipping_Client`。
-5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019)`游戏\bin\Win64_Shipping_Client`目录下名为`TaleWorlds.*`的所有DLL文件。同时引用各个官方MOD中所有名为`TaleWorlds.*`的DLL文件\(`Modules\ModuleName\bin\Win64_Shipping_Client`\)。
-
-### 为你的项目DEBUG (可选)
-
-1. 打开project properties，选择 `Debug` 标签.
-2. 选择`启动外部程序 Start external program`选项并选中位于`bin\Win64_Shipping_Client`目录下的`Bannerlord.exe`\(游戏目录而非MOD目录\)。
-3. 把工作目录设置为`bin\Win64_Shipping_Client`\(同上\)。
-4. 添加如下运行参数\(把ExampleMod替换为你MOD的名字\):
-   * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*ExampleMod*_MODULES_`
+对于Mod文件结构的信息，请参考[这里](../_intro/folder-structure.md)
 
 ## 编写代码
 
-1. 在你的 VS 项目中创建一个新的类，命名为`MySubModule`并打开它。
-2. 为你的类添加如下引用:
+1. 打开 `MySubModule` 类。
+2. 添加如下的引用。
 
    ```csharp
     using TaleWorlds.Core;
@@ -80,20 +80,19 @@
     using TaleWorlds.MountAndBlade;
    ```
 
-3. 继承`MBSubModuleBase`类。
-4. 重写继承自上述类的`OnSubModuleLoad()`方法。
-5. 将以下代码加如你重写的方法:
+3. 继承 `MBSubModuleBase` 类
+4. 重载 `OnSubModuleLoad()` 方法
+5. 添加如下代码到这个方法：
 
    ```csharp
     Module.CurrentModule.AddInitialStateOption(new InitialStateOption("Message",
-        new TextObject("Message", null),
+        new TextObject("消息", null),
         9990,
         () => { InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
         false));
    ```
 
-6. 编辑你的项目并取人它被输出到`Modules\ExampleMod\bin\Win64_Shipping_Client`目录。
-7. 打开游戏启动器并在`Singleplayer` &gt; `Mods`中找到你的MOD，启用它并启动游戏。
-8. 在标题画面，你应该能看到`Message`按钮。当你点击它后，你应该能在屏幕左下角看到`Hello World`字样\(在对话框里\)。
-9. 恭喜你完成了你的第一个骑砍2MOD！
-
+6. 编译你的项目并且确认输出到 `Modules\ExampleMod\bin\Win64_Shipping_Client` 下
+7. 打开霸主启动器，并且选择 `Singleplayer` &gt; `Mods` 然后选择你的 Mod， 然后启动游戏。
+8. 在标题页面，你应该能看到一个按钮叫做 `消息` ，点击你应该能看到 `Hello World` 出现在屏幕左下角。
+9. 现在你已经成功创建了第一个骑马与砍杀2：霸主的Mod！
