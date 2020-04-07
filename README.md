@@ -15,10 +15,10 @@
 * [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
 * [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
 
-
 ## [Mod C\# API 文档](_csharp-api/README.md)
 
 * [战役系统 CampaignSystem](c-api-documentation/campaignsystem.md)
+  * [游戏菜单](_csharp-api/campaignsystem/gamemenu.md)
 * [核心 Core](c-api-documentation/core/)
 * [引擎 Engine](c-api-documentation/engine/)
 * [输入系统 InputSystem](c-api-documentation/inputsystem/)
