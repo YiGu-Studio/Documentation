@@ -11,7 +11,7 @@
 [name](#name)
 
 - #### name
-  **type:**  `string`  
+  **类型:**  `string`  
   **possbile values:** `Captain` | `TeamDeathmatch` | `Skirmish` | `FreeForAll` | `Duel` | `Siege` 
-  **example:**  `Captain`  
+  **例子:**  `Captain`  
   *The GameType of the Scene*  

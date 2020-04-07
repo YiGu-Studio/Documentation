@@ -26,14 +26,14 @@
 
 #### 在本教程中，我们的项目名字叫做 `ExampleMod`。
 
-### 设置你的Module \(SubModule.xml\)
+### 配置你的Module \(SubModule.xml\)
 
-1. 选定游戏目录下的`Modules`文件夹。
+1. 进入游戏目录下的`Modules`文件夹。
 2. 创建一个新的文件夹并且起名字，进入文件夹。
 3. 创建文件夹名字为 `bin`。
 4. 在 Visual Studio 中设置 构建输出的DLL到这个 `bin` 文件夹下面。
 5. 在 VS Project 下创建一个新的类 `MySubModule`。
-6. 创建文件 `SubModule.xml` 然后复制如下到文件中：
+6. 创建文件 `SubModule.xml` 然后复制如下内容到文件中：
 
    ```xml
     <Module>
@@ -69,7 +69,7 @@
 
 对于Mod文件结构的信息，请参考[这里](../_intro/folder-structure.md)
 
-## 编程
+## 编写代码
 
 1. 打开 `MySubModule` 类。
 2. 添加如下的引用。
@@ -79,6 +79,7 @@
     using TaleWorlds.Localization;
     using TaleWorlds.MountAndBlade;
    ```
+
 3. 继承 `MBSubModuleBase` 类
 4. 重载 `OnSubModuleLoad()` 方法
 5. 添加如下代码到这个方法：
