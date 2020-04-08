@@ -1,10 +1,10 @@
 # Agent
 
-You can think of an agent as any **living** entity in the game.
+你可以将agent想象成一个在游戏里面处于**运行时**状态的实体。
 
-This might be the player, an NPC character, or even a horse.
+它可以是玩家本身，也可以是一个NPC角色，甚至是一匹马。
 
-## Tips
+## 提示
 
-* You can get the player agent through the `Agent.Main` property \(assuming they are alive\).
+* 你可以通过代码中的 `Agent.Main` 这个属性去获取当前玩家的Agent. \(前提是得保证它本身还存在\).
 
