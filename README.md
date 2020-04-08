@@ -1,33 +1,37 @@
-# Bannerlord Documentation
+# 骑马与砍杀2 领主 Mod 制作文档
 
-## Introduction to Modding
+原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)  
+作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)  
+译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， [世俗骑士](mailto:843750340@qq.com)
 
-* [Getting Started](_intro/getting-started.md)
-* [Folder Structure](_intro/folder-structure.md)
-* [Advanced](_intro/advanced.md)
+## Mod 制作简介
 
-## Tutorials
+* [开始](_intro/getting-started.md)
+* [文件结构](_intro/folder-structure.md)
+* [高级用法](_intro/advanced.md)
 
-* [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
-* [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
+## 教程
+
+* [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
+* [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
 * [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex) \(Easy\)
 
-## [C# API Documentation](_csharp-api/)
+## [Mod C\# API 文档](_csharp-api/README.md)
 
-* [CampaignSystem](_csharp-api/campaignsystem/)
-  * [GameMenu](_csharp-api/campaignsystem/gamemenu.md)
-* [Core](_csharp-api/core/)
-* [Engine](_csharp-api/engine/)
-* [InputSystem](_csharp-api/inputsystem/)
-* [Library](_csharp-api/library/)
-* [Localization](_csharp-api/localization/)
-* [MountAndBlade](_csharp-api/mountandblade/)
-* [Network](_csharp-api/network/)
-* [PlatformService](_csharp-api/platformservice/)
-* [SaveSystem](_csharp-api/savesystem/)
-* [TwoDimension](_csharp-api/twodimension/)
+* [战役系统 CampaignSystem](c-api-documentation/campaignsystem.md)
+  * [游戏菜单](_csharp-api/campaignsystem/gamemenu.md)
+* [核心 Core](c-api-documentation/core/)
+* [引擎 Engine](c-api-documentation/engine/)
+* [输入系统 InputSystem](c-api-documentation/inputsystem/)
+* [库 Library](c-api-documentation/library/)
+* [本地化 Localization](c-api-documentation/localization.md)
+* [MountAndBlade](c-api-documentation/mountandblade/)
+* [网络 Network](c-api-documentation/network.md)
+* [平台服务 PlatformService](c-api-documentation/platformservice.md)
+* [保存系统 SaveSystem](c-api-documentation/savesystem.md)
+* [TwoDimension](c-api-documentation/twodimension.md)
 
-## [Gauntlet Documentation](_gauntlet/)
+## [Gauntlet UI系统 文档](_gauntlet/)
 
 * [GauntletLayer](_gauntlet/gauntletlayer.md)
 * [GauntletMovie](_gauntlet/gauntletmovie.md)
@@ -41,10 +45,9 @@
 
 ## [XML Documentation](_xmldocs)
 
-* [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
-* [Cultures](_xmldocs/cultures.md) \(.xml\)
-* [Items](_xmldocs/items.md) \(.xml\)
-* [NPCCharacters](_xmldocs/npccharacters.md) \(.xml\)
-* [Scene](_xmldocs/scene.md) \(.xml\)
-* [SubModule](_xmldocs/submodule.md) \(.xml\)
-
+* [环境](_xmldocs/atmosphere.md) \(.xml\)
+* [文化](_xmldocs/cultures.md) \(.xml\)
+* [物品](_xmldocs/items.md) \(.xml\)
+* [角色](_xmldocs/npccharacters.md) \(.xml\)
+* [场景](_xmldocs/scene.md) \(.xml\)
+* [子模块](_xmldocs/submodule.md) \(.xml\)

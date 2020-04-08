@@ -10,7 +10,7 @@
 [name](#name)
 
 - #### name
-  **type:**  `string`  
+  **类型:**  `string`  
   **possible values:** `River` | `Forest` | `Water` | `Dune` | `Mountain` | `Canyon` | `Lake`
-  **example:**  `{=!}battle_terrain_a (Plain)`  
+  **例子:**  `{=!}battle_terrain_a (Plain)`  
   *The name of the TerrainType*  

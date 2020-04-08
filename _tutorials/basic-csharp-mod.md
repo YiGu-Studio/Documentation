@@ -1,19 +1,39 @@
-# Basic C\# Mod
+# 基本 C\# Mod
 
-## Introduction
+## 介绍
 
-The following guide will walk you through step-by-step on how to create a basic C\# mod. This mod will add a button to the singleplayer title screen called `Message`. When clicked, this button will output `Hello World` to chat.
+本文档旨在一步一步教你如何创建一个简单的 C\# Mod。这个Mod将会在单人模式的标题页面增加一个叫做 `消息` 的按钮。当点击按钮的时候，将会在聊天界面输出 `Hello World`。
 
-## Preparation
+## 准备
 
-#### For this tutorial, we will be naming our project `ExampleMod`.
+### 创建 C\# 项目
 
-### Setting up your Module \(SubModule.xml\)
+创建 C\# 项目之前，要明白的是，如果只是修改/增加物品，人物或场景的话，可以不需要创建项目。
 
-1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #4).
-3. Create a new folder named `bin` and inside this directory, create a new folder called `Win64_Shipping_Client`.
-4. Create a new `SubModule.xml` file (must be named this) inside the folder you created in Step #2 and then paste the following into it:
+1. 启动 Microsoft Visual Studio 并且选择 `创建新项目`。
+2. 选择 `类库 (.NET Framework)`。
+3. 给项目起名字并且选择框架 `.NET Framework 4.7.2`。如果不能选这个选项，可以从[这里](https://dotnet.microsoft.com/download/dotnet-framework/net472)下载。下载\(开发者包\)
+4. 现在你的项目已经创建好，设置你的[构建路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)到你的游戏目录下的`Modules/MyModule/bin/Win64_Shipping_Client`。
+5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 游戏目录（不是指Modules目录）`bin\Win64_Shipping_Client`下的所有`TaleWorlds.*` DLLs 文件。并且引用每个官方模组的 `TaleWorlds.*` DLLs文件，目录为 `Modules\ModuleName\bin\Win64_Shipping_Client`。
+
+### Debugging 项目
+
+1. 打开 项目属性 到 `Debug` 选项卡。
+2. 选择 `启动外部程序` 选项，同时浏览到你游戏目录下（不是Modules目录）的`bin\Win64_Shipping_Client`文件夹里面的 `Bannerlord.exe`。
+3. 设置工作目录到游戏目录（不是Modules目录）下的 `bin\Win64_Shipping_Client`。
+4. 添加如下的命令行参数(要确定替代 `MyModule` 的名字) 
+   * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*MyModule*_MODULES_`
+
+#### 在本教程中，我们的项目名字叫做 `ExampleMod`。
+
+### 配置你的Module \(SubModule.xml\)
+
+1. 进入游戏目录下的`Modules`文件夹。
+2. 创建一个新的文件夹并且起名字，进入文件夹。
+3. 创建文件夹名字为 `bin`。
+4. 在 Visual Studio 中设置 构建输出的DLL到这个 `bin` 文件夹下面。
+5. 在 VS Project 下创建一个新的类 `MySubModule`。
+6. 创建文件 `SubModule.xml` 然后复制如下内容到文件中：
 
    ```xml
     <Module>
@@ -43,36 +63,16 @@ The following guide will walk you through step-by-step on how to create a basic 
         <Xmls/>
     </Module>
    ```
+   
+7. 如果你用了不同的名字，记得修改对应的值
+8. 开始启动，确保你的 Mod 出现 `Singleplayer` &gt; `Mods`。
 
-    **Note**: `MySubModule` is the name of the class we will be using in the [Programming](#programming) section of the tutorial.
+对于Mod文件结构的信息，请参考[这里](../_intro/folder-structure.md)
 
-5. If you are using different names, change the above values to match that of your Module/SubModule.
-6. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
+## 编写代码
 
-For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
-
-### Setting up your Project
-
-Before setting up a project, it is important to know that **this is not required for basic mods** \(e.g. changing or adding items/characters/scenes\).
-
-1. Start Microsoft Visual Studio and select `Create New Project`.
-2. Choose `Class Library (.NET Framework)`.
-3. Name your project `ExampleMod` (if you choose another name make sure that your namespace and assembly name are correct) `.NET Framework 4.7.2` as the `Framework`.  If this option is not available for you, [Download it here](https://dotnet.microsoft.com/download/dotnet-framework/net472) \(Developer Pack\).
-4. Now that your project is setup, [set your build path](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019) to the `Modules/ExampleMod/bin/Win64_Shipping_Client` directory in your game files.
-5. [Reference](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory of your game files \(not your module directory\). Also reference the `TaleWorlds.*` DLLs for each official module in `Modules\ModuleName\bin\Win64_Shipping_Client`.
-
-### Debugging your Project (Optional)
-
-1. Open your project properties and go to the `Debug` tab.
-2. Select the `Start external program` option and then browse for `Bannerlord.exe` located in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
-3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
-4. Add the following command line arguments \(be sure to replace ExampleMod with the name of your module\):
-   * `/singleplayer _MODULES_*Native*SandBoxCore*CustomBattle*SandBox*StoryMode*ExampleMod*_MODULES_`
-
-## Programming
-
-1. Create a new class in your VS Project and name it `MySubModule`, then open it.
-2. Add the following using directives to your class:
+1. 打开 `MySubModule` 类。
+2. 添加如下的引用。
 
    ```csharp
     using TaleWorlds.Core;
@@ -80,20 +80,19 @@ Before setting up a project, it is important to know that **this is not required
     using TaleWorlds.MountAndBlade;
    ```
 
-3. Inherit from the `MBSubModuleBase` class.
-4. Setup an override for the `OnSubModuleLoad()` inherited method.
-5. Add the following code to your override method:
+3. 继承 `MBSubModuleBase` 类
+4. 重载 `OnSubModuleLoad()` 方法
+5. 添加如下代码到这个方法：
 
    ```csharp
     Module.CurrentModule.AddInitialStateOption(new InitialStateOption("Message",
-        new TextObject("Message", null),
+        new TextObject("消息", null),
         9990,
         () => { InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
         false));
    ```
 
-6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin\Win64_Shipping_Client`.
-7. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game.
-8. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen \(in chat\).
-9. You have now successfully created your first Bannerlord mod!
-
+6. 编译你的项目并且确认输出到 `Modules\ExampleMod\bin\Win64_Shipping_Client` 下
+7. 打开霸主启动器，并且选择 `Singleplayer` &gt; `Mods` 然后选择你的 Mod， 然后启动游戏。
+8. 在标题页面，你应该能看到一个按钮叫做 `消息` ，点击你应该能看到 `Hello World` 出现在屏幕左下角。
+9. 现在你已经成功创建了第一个骑马与砍杀2：霸主的Mod！
