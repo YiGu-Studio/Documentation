@@ -1,7 +1,5 @@
 # Widget
 
-Widgets are a great way to create interactable content for your UIs. This may include scrollbars, buttons, tooltips, and so on.
-
 Widgets（以下简称控件） 是一种强大的，用于为你的UI创建可交互内容的工具。它可能包括scrollbars（滚动条）, buttons（按钮）, tooltips（工具栏）,等等。
 
 ## 常用的预定义控件包括
