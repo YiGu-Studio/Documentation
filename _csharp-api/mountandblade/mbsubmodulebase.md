@@ -1,6 +1,6 @@
 # MBSubModuleBase
 
-你可以继承 `MBSubModuleBase 类` 来处理MOD的加载，可以说这是你MOD的入口。这个类中有一些很有用的重载，比如 `OnSubModuleLoad()` 和 `OnApplicationTick()`。
+你可以通过继承 `MBSubModuleBase 类` 来处理MOD的加载，可以说这是你MOD的入口。这个类中有一些很有用的重载，比如 `OnSubModuleLoad()` 和 `OnApplicationTick()`。
 
 **一定注意在 `SubModule.xml` 里写上正确完整的类名，不然运行时会出问题。**
 
