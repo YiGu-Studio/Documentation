@@ -19,7 +19,7 @@
 ## [Mod C\# API 文档](_csharp-api/README.md)
 
 * [战役系统 CampaignSystem](c-api-documentation/campaignsystem.md)
-  * [游戏菜单](_csharp-api/campaignsystem/gamemenu.md)
+* [游戏菜单](_csharp-api/campaignsystem/gamemenu.md)
 * [核心 Core](c-api-documentation/core/)
 * [引擎 Engine](c-api-documentation/engine/)
 * [输入系统 InputSystem](c-api-documentation/inputsystem/)
