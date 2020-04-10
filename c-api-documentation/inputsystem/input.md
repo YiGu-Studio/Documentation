@@ -4,7 +4,7 @@
 
 ## 按键获取
 
-`GetKeyDown(KeyCode)` \| `GetKeyPressed(KeyCode)` \| `GetKeyReleased(KeyCode)` -是最常用的方法。当按键被按下时，`GetKeyDown`将会持续返回true，这可能导致意外的情况。如果你一次只想读一次输入数据，使用`GetKeyPressed` 或者 `GetKeyReleased`。
+`GetKeyDown(KeyCode)` \| `GetKeyPressed(KeyCode)` \| `GetKeyReleased(KeyCode)` -是最常用的方法。当按键被按下时，`GetKeyDown`将会持续每一帧都返回true，这可能导致不够理想的运行情况。如果你一次只想读一次输入数据，使用`GetKeyPressed` 或者 `GetKeyReleased`。
 
 你也可以使用`IsDown`/`IsPressed`/`IsReleased`这种扩展方法，比如`KeyCode.A.IsPressed()`。
 
