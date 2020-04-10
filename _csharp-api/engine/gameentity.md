@@ -18,4 +18,4 @@ GameEntity.Instantiate(Mission.Current.Scene, "ship_a", Agent.Main.Frame)
 
 ## 多人模式中的游戏实体
 
-某些游戏实体无法在玩家的客户端之间同步，因此你需要自己往脚本组件\(`ScriptComponent`\)里添加 `SynchedMissionObject`
+某些游戏实体无法在玩家的客户端之间同步，因此你需要自己往脚本组件\(`ScriptComponent`\)里添加 `SynchedMissionObject`。
