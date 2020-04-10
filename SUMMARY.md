@@ -8,8 +8,10 @@
 * [Tutorials](_tutorials/README.md)
   * [Basic C\# Mod](_tutorials/basic-csharp-mod.md)
   * [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md)
+  * [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex)
 * [C# API Documentation](_csharp-api/README.md)
   * [CampaignSystem](_csharp-api/campaignsystem/README.md)
+    * [GameMenu](_csharp-api/campaignsystem/gamemenu.md)
   * [Core](_csharp-api/core/README.md)
     * [BasicCharacterObject](_csharp-api/core/basiccharacterobject.md)
     * [InformationManager](_csharp-api/core/informationmanager.md)
@@ -51,6 +53,7 @@
   * [Atmosphere \(XML\)](_xmldocs/atmosphere.md)
   * [Cultures/Factions \(XML\)](_xmldocs/cultures.md)
   * [Items \(XML\)](_xmldocs/items.md)
+  * [NPCCharacters \(XML\)](_xmldocs/npccharacters.md)
   * [Scene \(xScene\)](_xmldocs/scene.md)
   * [SubModule \(XML\)](_xmldocs/submodule.md)
 

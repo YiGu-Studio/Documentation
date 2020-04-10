@@ -14,11 +14,12 @@
 
 * [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
 * [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
-
+* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex) \(Easy\)
 
 ## [Mod C\# API 文档](_csharp-api/README.md)
 
 * [战役系统 CampaignSystem](c-api-documentation/campaignsystem.md)
+  * [游戏菜单](_csharp-api/campaignsystem/gamemenu.md)
 * [核心 Core](c-api-documentation/core/)
 * [引擎 Engine](c-api-documentation/engine/)
 * [输入系统 InputSystem](c-api-documentation/inputsystem/)
@@ -42,10 +43,11 @@
 * [Movies](_gauntlet/movie.md) \(.xml\)
 * [Brushes](_gauntlet/brush.md) \(.xml\)
 
-## [XML 文档](_xmldocs/)
+## [XML Documentation](_xmldocs)
 
-* [环境 Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
-* [物品 Items \(XML\)](_xmldocs/Items/README.md) \(.xml\)
-* [场景 Scene](_xmldocs/scene.md) \(.xscene\)
-* [文化 Culture](_xmldocs/cultures.md) \(.xml\)
-* [子模块 SubModule](_xmldocs/submodule.md) \(.xml\)
+* [环境](_xmldocs/atmosphere.md) \(.xml\)
+* [文化](_xmldocs/cultures.md) \(.xml\)
+* [物品](_xmldocs/items.md) \(.xml\)
+* [角色](_xmldocs/npccharacters.md) \(.xml\)
+* [场景](_xmldocs/scene.md) \(.xml\)
+* [子模块](_xmldocs/submodule.md) \(.xml\)
