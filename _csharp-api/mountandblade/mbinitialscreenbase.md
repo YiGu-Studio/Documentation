@@ -2,7 +2,9 @@
 
 You can create a custom title screen by inheriting from MBInitialScreenBase and then applying the GameStateScreen attribute to your class.
 
-Here is a skeleton of what your inherited class should look like:
+想要创建一个自定义的开场画面，你可以写一个MBInitialScreenBase的派生类，然后让你的类采用`GameStateScreen`属性。
+
+这个派生类的写法，可以参考以下例子:
 
 ```csharp
 [GameStateScreen(typeof(InitialState))]
@@ -28,5 +30,4 @@ public class MyInitialScreen : MBInitialScreenBase
 }
 ```
 
-Replace the string `InitialScreen` with the name of your [Movie](../../_gauntlet/movie.md)'s XML file.
-
+然后把 `InitialScreen` 替换成相应的[影片](../../_gauntlet/movie.md)XML文件的文件名。
