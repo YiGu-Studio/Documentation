@@ -2,7 +2,7 @@
 
 `ModuleInfo`类里放的是各个Mod的相关信息。
 
-我们可以把所有**已加载**的Mod详细信息\(它们各自的`ModuleInfor`\)读取到一个列表`List`里面如：
+我们可以把所有**已加载**的Mod的详细信息\(它们各自的`ModuleInfor`\)读取到一个列表`List`里面如：
 
 ```csharp
 var loadedMods = new List<ModuleInfo>();
