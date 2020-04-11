@@ -1,6 +1,6 @@
 # ModuleInfo
 
-`ModuleInfor`类里放的是各个Mod的相关信息。
+`ModuleInfo`类里放的是各个Mod的相关信息。
 
 我们可以用一个列表`List`来放所有**已加载**的Mod及它们各自的详细信息\(它们自己的`ModuleInfor`\)，比如：
 
