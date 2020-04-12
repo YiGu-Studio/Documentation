@@ -1,9 +1,8 @@
 # ScriptComponentBehaviour
 
+ScriptComponentBehaviours can be used to do anything from animating \(rotating\) windmills, to creating a custom weapon spawner, or even entirely new siege machines.
 
-从风车旋转的动画，到创建自定义的武器生成器，或者全新的攻城武器——ScriptComponentBehaviour可以用来做很多事情。
-
-一个`TaleWorlds.MountAndBlade.dll`的`LumberJack`类中，关于ScriptComponentBehaviour的基础例子：
+A basic example of a ScriptComponentBehaviour is the `LumberJack` class in `TaleWorlds.MountAndBlade.dll`:
 
 ```csharp
     public class Lumberjack : ScriptComponentBehaviour
@@ -26,9 +25,7 @@
     }
 ```
 
+\*\* Note: It is probably better to override `OnInit()` instead of `OnTick()` here. Since this is how it was written by TaleWorlds, this example will remain as-is for the time being.
 
-
-\*\* 注意: 这里最好重写`OnInit()`而不是使用 `OnTick()`。因为按照TaleWorlds的写法，这个例子的代码将随着时间一直运行。
-
-可能的原因：网格不能在OnInit中被编辑/生成，你可能得等一个Tick，否则游戏会崩溃。
+Possible Reason: Meshes can not be Edited/Set etc in OnInit u have to wait atleast a Tick, else ur Game Crashes
 

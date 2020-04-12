@@ -1,8 +1,8 @@
 # MBInitialScreenBase
 
-你可以通过继承MBInitialScreenBase类，然后将GameStateScreen特性赋予该类，从而创建一个属于你的自定义标题屏幕。
+想要创建一个自定义的开场画面，你可以写一个MBInitialScreenBase的派生类，然后让这个类采用`GameStateScreen`属性。
 
-这里是一个让你知道如何正确操作的具体框架：
+这个派生类的写法，可以参考以下例子:
 
 ```csharp
 [GameStateScreen(typeof(InitialState))]
@@ -28,5 +28,4 @@ public class MyInitialScreen : MBInitialScreenBase
 }
 ```
 
-将字符串`InitialScreen` 替换成你想要的[Movie](../../_gauntlet/movie.md)的XML文件名。
-
+然后把类名中的 `InitialScreen` 替换成相应的[影片](../../_gauntlet/movie.md)XML文件的文件名。

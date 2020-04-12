@@ -2,7 +2,7 @@
 
 原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)  
 作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)  
-译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， [世俗骑士](mailto:843750340@qq.com)
+译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， [世俗骑士](mailto:843750340@qq.com)，[上官云泽](mailto:1143232792@qq.com).
 
 ## Mod 制作简介
 
@@ -14,22 +14,23 @@
 
 * [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
 * [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
-* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex) \(Easy\)
+* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex.md) \(Easy\)
 
-## [Mod C\# API 文档](_csharp-api/README.md)
+## [Mod C\# API 文档](_csharp-api/)
 
-* [战役系统 CampaignSystem](c-api-documentation/campaignsystem.md)
-  * [游戏菜单](_csharp-api/campaignsystem/gamemenu.md)
-* [核心 Core](c-api-documentation/core/)
-* [引擎 Engine](c-api-documentation/engine/)
-* [输入系统 InputSystem](c-api-documentation/inputsystem/)
-* [库 Library](c-api-documentation/library/)
-* [本地化 Localization](c-api-documentation/localization.md)
-* [MountAndBlade](c-api-documentation/mountandblade/)
-* [网络 Network](c-api-documentation/network.md)
-* [平台服务 PlatformService](c-api-documentation/platformservice.md)
-* [保存系统 SaveSystem](c-api-documentation/savesystem.md)
-* [TwoDimension](c-api-documentation/twodimension.md)
+* [战役系统 CampaignSystem](_csharp-api/campaignsystem/)
+  * [ 游戏菜单GameMenu](_csharp-api/campaignsystem/gamemenu.md)
+* [核心 Core](_csharp-api/core/)
+* [引擎 Engine](_csharp-api/engine/)
+  * [场景 Scene](_csharp-api/engine/scene.md)
+* [输入系统 InputSystem](_csharp-api/inputsystem/)
+* [库 Library](_csharp-api/library/)
+* [本地化 Localization](_csharp-api/localization/)
+* [MountAndBlade](_csharp-api/mountandblade/)
+* [网络 Network](_csharp-api/network/)
+* [平台服务 PlatformService](_csharp-api/platformservice/)
+* [保存系统 SaveSystem](_csharp-api/savesystem/)
+* [TwoDimension](_csharp-api/twodimension/)
 
 ## [Gauntlet UI系统 文档](_gauntlet/)
 

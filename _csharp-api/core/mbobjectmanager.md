@@ -1,12 +1,10 @@
 # MBObjectManager
 
+The object manager is something that you will be using a lot in the modding of Bannerlord, so it is important to familiarize yourself with it.
 
-object manager是在霸主中你将经常使用的东西, 所以熟悉它对你来说非常重要。
+The MBObjectManager can be used to get any object in the game that is currently loaded from the XMLs.
 
-MBObjectManager可以用来得到游戏当前已经从XML加载的任何object。 
-
-
-包括:
+These include:
 
 * [BasicCharacterObjects](basiccharacterobject.md)
 * CharacterAttributes
@@ -20,7 +18,7 @@ MBObjectManager可以用来得到游戏当前已经从XML加载的任何object�
 * SkillObjects
 * SiegeEngineTypes
 
-例如取得：[BasicCharacterObject](basiccharacterobject.md):
+Example of getting a [BasicCharacterObject](basiccharacterobject.md):
 
 ```csharp
 MBObjectManager.Instance.GetObject<BasicCharacterObject>("example_troop_id");
