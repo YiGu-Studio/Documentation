@@ -14,7 +14,7 @@
 
 * [基本C\# Mod 入门](_tutorials/basic-csharp-mod.md) \(需要一定基础的 C\#\)
 * [不需要C\#的UI系统 Mod 入门](_tutorials/modding-gauntlet-without-csharp.md) \(简单\)
-* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex) \(Easy\)
+* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex.md) \(Easy\)
 
 ## [Mod C\# API 文档](_csharp-api/)
 
