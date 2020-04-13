@@ -5,12 +5,12 @@
 - [NPCCharacters](../../NPCCharacters)
 
 ## 子节点
-- [equipment](装备)
-- [equipmentSet](套装)
-- [face](面部)
-- [skills](技能)
-- [Traits](个性)
-- [upgrade_targets](升级_目标)
+- [equipment](equipment)
+- [equipmentSet](equipmentSet)
+- [face](face)
+- [skills](skills)
+- [Traits](Traits)
+- [upgrade_targets](upgrade_targets)
 
 ## 属性
 [id](#id) | [name](#name) | [default_group](#default_group) | [is_hero](#is_hero) | [civilianTemplate](#civiliantemplate) | [occupation](#occupation) | [culture](#culture) | [skill_template](#skill_template) | [skill_template](#skill_template_1) | [is_female](#is_female) | [level](#level) | [is_basic_troop](#is_basic_troop) | [upgrade_requires](#upgrade_requires) | [formation_position_preference](#formation_position_preference) | [battleTemplate](#battletemplate) | [age](#age) | [voice](#voice)
