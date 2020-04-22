@@ -1,9 +1,9 @@
 Work In Progress by Watikita, V1.1
 # Agent [Type]
 
-You can think of an agent as any **living** entity in the game.
+你可以把媒介(`agent`)想象成游戏里任何**能走动**的实体。
 
-This might be the player, an NPC character, or even a horse.
+比方说可以是玩家，NPC，甚至是一匹马。
 
 ## Relevant methods and properties
 
