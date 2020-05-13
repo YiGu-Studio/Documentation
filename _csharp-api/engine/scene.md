@@ -5,7 +5,6 @@ Scenes are the current loaded view of the instances.
 ## Tips
 
 * You can get current scene with `Mission.Current.Scene` assuming `Mission.Current` is not null and Scene is loaded.
-
 * You can get the Scenes' static information through `/Modules/_MODULENAME_/SceneObj/`.
 
 ### Scene Detection Example

@@ -1,9 +1,10 @@
-# Scenes (XML)
+# Scenes \(XML\)
 
 ## Scenes documentation
 
-- [Scenes](Scenes)
-  - [Scene](Scenes/Scene)
-    - [TerrainTypes](Scenes/Scene/TerrainTypes)
-      - [TerrainType](Scenes/Scene/TerrainTypes/TerrainType)
-    - [GameType](Scenes/Scene/GameType)
+* [Scenes](scenes/)
+  * [Scene](scenes/scene/)
+    * [TerrainTypes](scenes/scene/terraintypes/)
+      * [TerrainType](scenes/scene/terraintypes/terraintype.md)
+    * [GameType](scenes/scene/gametype.md)
+

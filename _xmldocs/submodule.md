@@ -19,7 +19,7 @@
 
 ## 例子
 
-```xml
+```markup
 <Module>
     <Name value="My Module"/>
     <Id value="MyModule"/>
@@ -59,3 +59,4 @@
     </Xmls>
 </Module>
 ```
+

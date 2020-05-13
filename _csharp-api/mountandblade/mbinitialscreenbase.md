@@ -29,3 +29,4 @@ public class MyInitialScreen : MBInitialScreenBase
 ```
 
 然后把类名中的 `InitialScreen` 替换成相应的[影片](../../_gauntlet/movie.md)XML文件的文件名。
+

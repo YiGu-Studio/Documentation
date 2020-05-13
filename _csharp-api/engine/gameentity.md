@@ -10,7 +10,7 @@
 GameEntity.Instantiate(Scene scene, string prefabName, MatrixFrame frame)
 ```
 
-另一个例子，往`main [Agent]`(../mountandblade/agent.md)里生成一个物体。\(注：`Agent`负责处理活物\)
+另一个例子，往`main [Agent]`\(../mountandblade/agent.md\)里生成一个物体。\(注：`Agent`负责处理活物\)
 
 ```csharp
 GameEntity.Instantiate(Mission.Current.Scene, "ship_a", Agent.Main.Frame)

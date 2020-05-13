@@ -11,11 +11,11 @@
 ### 配置你的Module \(SubModule.xml\)
 
 1. 到你的游戏目录下并且选定 `Modules` 目录；
-2. 创建一个新的目录并且叫做 `ExampleMod` （这个目录名称必须和第四步里面的 Id 一致） Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #4)；
+2. 创建一个新的目录并且叫做 `ExampleMod` （这个目录名称必须和第四步里面的 Id 一致） Create a new folder and name it `ExampleMod` \(Must be the same as the Id you use for Step \#4\)；
 3. 创建一个名叫 `bin` 的目录, 并且在这个目录下，创建一个新的目录 `Win64_Shipping_Client`；
 4. 在 `ExampleMod` 目录下建一个新的文件 `SubModule.xml` （必须是这个名字）, 同时复制如下内容进去:
 
-   ```xml
+   ```markup
     <Module>
         <Name value="Example Mod"/>
         <Id value="ExampleMod"/>
@@ -44,7 +44,7 @@
     </Module>
    ```
 
-    **提示**: `MySubModule` 是我们在[编程]((#programming))指导部分要用到的设定的类名字。
+   **提示**: `MySubModule` 是我们在\[编程\]\(\(\#programming\)\)指导部分要用到的设定的类名字。
 
 5. 如果你在用其他名字，上述的内容要按照需要修改。
 6. 启动游戏，确保你的 Mod 出现 `Singleplayer` &gt; `Mods`。
@@ -61,16 +61,18 @@
 4. 现在你的项目已经创建好，设置你的[构建路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)到你的游戏目录下的`Modules/MyModule/bin/Win64_Shipping_Client`。
 5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 游戏目录（不是指Modules目录）`bin\Win64_Shipping_Client`下的所有`TaleWorlds.*` DLLs 文件。并且引用每个官方模组的 `TaleWorlds.*` DLLs文件，目录为 `Modules\ModuleName\bin\Win64_Shipping_Client`。
 
-### Debugging 项目 (可选)
+### Debugging 项目 \(可选\)
 
-#### 方法一 (推荐)
+#### 方法一 \(推荐\)
+
 1. 打开 项目属性 到 `Debug` 选项卡。
 2. 选择 `启动外部程序` 选项，同时浏览到你游戏目录下（不是Modules目录）的`bin\Win64_Shipping_Client`文件夹里面的 `Bannerlord.exe`。
 3. 设置工作目录到游戏目录（不是Modules目录）下的 `bin\Win64_Shipping_Client`。
-4. 添加如下的命令行参数(要确定替代 `MyModule` 的名字) 
+4. 添加如下的命令行参数\(要确定替代 `MyModule` 的名字\) 
    * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*MyModule*_MODULES_`
 
-#### 方法二 (如果你想从启动器窗口开始 Debugging)
+#### 方法二 \(如果你想从启动器窗口开始 Debugging\)
+
 1. 打开 项目属性 到 `Debug` 选项卡；
 2. 选择 `打开外部程序` 选项同时浏览到你的游戏目录下（不是你的Mod目录）`bin\Win64_Shipping_Client` 文件夹下的 `TaleWorlds.MountAndBlade.Launcher.exe`；
 3. 设定你的工作目录是游戏目录下的 `bin\Win64_Shipping_Client`
@@ -102,5 +104,4 @@
 7. 打开霸主启动器，并且选择 `Singleplayer` &gt; `Mods` 然后选择你的 Mod， 然后启动游戏。
 8. 在标题页面，你应该能看到一个按钮叫做 `消息` ，点击你应该能看到 `Hello World` 出现在屏幕左下角。
 9. 现在你已经成功创建了第一个骑马与砍杀2：霸主的Mod！
-
 

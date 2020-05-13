@@ -55,3 +55,4 @@ public class MyExampleScreen : ScreenBase
 ```csharp
 ScreenManager.PushScreen(ViewCreatorManager.CreateScreenView<MyExampleScreen>());
 ```
+

@@ -1,9 +1,10 @@
-# SPCultures (XML)
+# SPCultures \(XML\)
 
 ## SPCultures documentation
 
-- [SPCultures](SPCultures)
-  - [Culture](SPCultures/Culture)
-    - [clan_names](SPCultures/Culture/clan_names)
-    - [female_names](SPCultures/Culture/female_names)
-    - [male_names](SPCultures/Culture/male_names)
+* [SPCultures](spcultures/)
+  * [Culture](spcultures/culture/)
+    * [clan\_names](spcultures/culture/clan_names/)
+    * [female\_names](spcultures/culture/female_names/)
+    * [male\_names](spcultures/culture/male_names/)
+
