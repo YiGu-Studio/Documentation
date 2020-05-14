@@ -1,11 +1,12 @@
-# Hero
+hero.md
+# Hero 类
 
-Heroes are all the unique characters in the game. This class contains all the information of these characters and allows you to change them.
+在游戏中所有的英雄都是独一无二的.这个类包含了所有这些英雄的信息,同时你也可以在此修改它们,
 
-## Functions
-Work in Progress
+## 函数
+(有待完善)
 
-## Properties
-- `CanHaveRecruits` - A boolean that details if this hero can have recruits. Preachers, Rural Notables, Mercenaries, Gang Leaders, Merchants, and Headmen can have recruits. This property can only be read, not changed.
+## 属性
 
-Work in Progress
+- `CanHaveRecruits` -这是一个决定英雄是否可以带兵的布尔值.村中家世显赫的人,雇佣兵,绑匪头子,商人,首领等可以带兵.这个属性为可读属性不可更改.
+(有待完善)

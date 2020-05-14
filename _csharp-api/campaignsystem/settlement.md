@@ -1,13 +1,13 @@
-# Settlement
+# 定居点
 
-Settlements are villages, castles, or towns on the campaign map.
+定居点是大地图中的那些村子,城堡,及城镇.
 
-## Tips
+## 贴士
 
-* You can get the current settlement with `Settlement.CurrentSettlement` assuming player is in the settlement.
+*可以使用`Settlement.CurrentSettlement`让玩家占领当前定居点.
 
-## Functions
-Work in Progress
+## 函数
+(有待完善)
 
-## Properties
-Work in Progress
+## 属性
+(有待完善)
